@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="generator" content="pandoc">
+        <meta name="author" content="Division des enseignements en informatique" />
+        <meta name="dcterms.date" content="2017-01-01" />
+        <title>Stage Emmanuel Bourassin</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.css">
+
+        <!-- For syntax highlighting -->
+        <style type="text/css">code{white-space: pre;}</style>
+        <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+        </style>
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+
+
+	<!-- Styles ENSG-IGN -->
+	<link rel="stylesheet" href="css/ign.css">
+
+        <!-- Printing and PDF exports -->
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script type="text/javascript">
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            //link.href = 'reveal.js/css/print/'+ (window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper') + '.css';
+            //link.media = 'print';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" type="text/javascript" src="reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <!-- -H/- -include-in-header -->
+    </head>
+    <body>
+        <!-- -B/- -include-before-body -->
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                <h1>Mise en place d'un moteur de recherche pour un portail géographique dont la pertinence tient compte de l'éloignement géographique</h1>
+                <h3>Service de l'informatique de la Polynésie française, cellule SIG</h3>
+                <p>Projet encadré par Emmanuel Bouniot</p>
+                <p>Emmanuel Bourassin, ingénieur 2e année</p>
+                </section>
+
+
+                <!-- - -toc/- -table-of-contents -->
+
+            <!-- ne pas indenter le $body$ sinon les codes (highlight) vont l'être aussi !!! -->
+<section id="intro" class="level1">
+  <h1>Contexte</h1>
+  <section id="intro-1" class="level2">
+    <h3>contexte du stage</h3>
+    <IMG SRC="image/TF.png">
+  </section>
+
+  <section id="intro-1" class="level2">
+    <h3>Moteur de recherche</h3>
+    <IMG SRC="image/obj.png">
+  </section>
+</section>
+
+<section id="tf" class="level1">
+  <h1>Te Fenua</h1>
+  <section id="tf-0" class="level2">
+    <h3>Plan</h3>
+    <IMG SRC="image/1.png">
+  </section>
+
+
+  <section id="tf-1" class="level2">
+    <h3>Présentation</h3>
+    <IMG SRC="image/TF.png">
+  </section>
+
+  <section id="tf-2" class="level2">
+    <h3>Utilisateurs</h3>
+    <IMG SRC="image/users.png">
+  </section>
+
+  <section id="tf-3" class="level2">
+    <h3>Données</h3>
+    <IMG SRC="image/data.png">
+  </section>
+
+</section>
+
+<section id="es" class="level1">
+  <h1>Choix techniques</h1>
+
+  <section id="es-0" class="level2">
+    <h3>Plan</h3>
+    <IMG SRC="image/2.png">
+  </section>
+
+  <section id="es-1" class="level2">
+    <h3>Elasticsearch</h3>
+    <IMG SRC="image/es.png">
+  </section>
+
+  <section id="es-2" class="level2">
+    <h3>Fonctionnement, format</h3>
+    <IMG SRC="image/export_to_GJ.png"
+     ALT="Diagramme fonctionnel"
+     TITLE="Diagramme fonctionnel">
+  </section>
+
+  <section id="es-3" class="level2">
+    <h3>Pertinence, calcul de score</h3>
+    <IMG SRC="image/score.png"
+     ALT="Diagramme fonctionnel"
+     TITLE="Diagramme fonctionnel">
+  </section>
+
+</section>
+
+<section id="sem" class="level1">
+  <h1>Aspect sémantique</h1>
+
+  <section id="sem-0" class="level2">
+    <h3>Plan</h3>
+    <IMG SRC="image/3.png">
+  </section>
+
+  <section id="sem-1" class="level2">
+    <h3>Index thématiques</h3>
+    <IMG SRC="image/index.png">
+  </section>
+
+  <section id="sem-2" class="level2">
+    <h3>Expressions régulières</h3>
+    <IMG SRC="image/regex.png">
+  </section>
+
+  <section id="sem-3" class="level2">
+    <h3>Mots-clés thématiques</h3>
+    <IMG SRC="image/kw.png">
+  </section>
+
+  <section id="sem-4" class="level2">
+    <h3>Processus</h3>
+    <IMG SRC="image/analyse.png">
+  </section>
+
+</section>
+
+<section id="geo" class="level1">
+  <h1>Aspect géospatial</h1>
+
+  <section id="geo-0" class="level2">
+    <h3>Plan</h3>
+    <IMG SRC="image/4.png">
+  </section>
+
+  <section id="geo-1" class="level2">
+    <h3>Comportements</h3>
+    <img src="image/comportements.png" alt="recherche">
+  </section>
+
+  <section id="geo-2" class="level2">
+    <h3>Principe et préalables</h3>
+    <img src="image/.png" alt="recherche">
+  </section>
+
+  <section id="geo-4" class="level2">
+    <h3>Prise en compte de la distance</h3>
+    <img src="image/gauss.png" alt="recherche">
+  </section>
+
+  <section id="geo-3" class="level2">
+    <h3>Processus</h3>
+    <img src="image/processus.png" alt="recherche">
+  </section>
+
+</section>
+
+<section id="resultats" class="level1">
+  <h1>Prolongement</h1>
+
+  <section id="resultats-0" class="level2">
+    <h3>Suite, réutilisation et perfectionnement</h3>
+  </section>
+
+</section>
+
+<section id="Remerciements" class="level1">
+  <section id="merci_merci" class="level2">
+    <h2>Tous mes remerciements à: </h2>
+  <p><b>Emmanuel BOUNIOT (SIPF/Cellule SIG), <br>Tehei TAIORE (SIPF/Cellule SIG), <br>Benoît COSTES (IGN/ENSG/DE/DEI)</b> </p>
+  <h2>pour leurs judicieux conseils et bienveillant accompagnement. </h2>
+  <p>Mais aussi à Hubert, Mathieu, Bryan, Leo, Fabrice, ...</p>
+
+  </section>
+</section>
+
+<section id="gestionproj" class="level1">
+  <h1>Des question</h1>
+
+  <section id="gestionproj-0" class="level2">
+    <h3>Des questions ?</h3>
+    <IMG SRC="image/kanban.svg"
+     ALT="visu informations"
+     TITLE="visu informations">
+  </section>
+</section>
+
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="reveal.js/lib/js/head.min.js"></script>
+        <script type="text/javascript" src="reveal.js/js/reveal.js"></script>
+
+        <script type="text/javascript">
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                /* mettre une taille en pixel sinon l'overview ne fonctionne plus */
+                width: 1580,
+                height: 1000,
+                controls: true,                                 // Display controls in the bottom right corner
+                progress: true,                                 // Display a presentation progress bar
+                history: true,                                  // Push each slide change to the browser history
+                center: true, // Vertical centering of slides
+                minScale: 0.2, // Bounds for smallestpossible content scale
+                maxScale: 1.5, // Bounds for largest possible content scale
+                slideNumber: true, // Display the page number of the current slide
+                autoSlide: 0, // Slide every duration milliseconds
+
+                theme: 'default', // available themes are in /css/theme
+                transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    // { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    // { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    /* ne pas activer highlight sinon la colorisation syntaxique ne fonctionne plus ? */
+                    // { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }//,
+                    // { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+        <!-- -A/- -include-after-body -->
+        <!-- comme le footer contient des variables, on le met dans le gabarit car
+             les variables ne sont pas interprétées via -A de pandoc -->
+    </body>
+</html>

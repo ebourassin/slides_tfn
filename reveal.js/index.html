@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/ign.css">
+
+		<!-- Theme used for syntax highlighting of code
+		<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+		<!-- Printing and PDF exports
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		-->
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+
+					<section>
+					<h1>Classification 3d multispectrale</h1>
+					<h3>Emile Blettery, </br> Emmanuel BOURASSIN,
+					</br> Guillemette FONTEIX</h3>
+					<h3>Projet encadré par Marc POUPÉE - février-mai 2018</h3>
+					</section>
+					<!-- - -toc/- -table-of-contents -->
+
+			<!-- ne pas indenter le $body$ sinon les codes (highlight) vont l'être aussi !!! -->
+<section id="rimac" class="level1">
+	<h1>Projet développement</h1>
+	<section id="rimac-1" class="level2">
+		<h3>Classification 3d multispectrale</h3>
+		<IMG SRC="image/logo.svg">
+		<p>1</p>
+	</section>
+</section>
+
+<section id="contraintes" class="level1">
+	<h1>Demande & contexte</h1>
+	<section id="contraintes-1" class="level2">
+		<h3>Objectif et contraintes</h3>
+		<IMG SRC="image/logo.svg"
+		ALT="Concaténation nuages de points"
+		TITLE="Concaténation nuages de points">
+		<p>2</p>
+	</section>
+
+
+<section id="contraintes-2" class="level2">
+<h3>CloudCompare</h3>
+<IMG SRC="image/concat.png"
+ALT="Concaténation nuages de points"
+TITLE="Concaténation nuages de points">
+<p>2</p>
+</section>
+
+<section id="contraintes-3" class="level2">
+<h3>Format .ply</h3>
+<IMG SRC="image/applications.svg"
+ALT="Détection, archéo, biomasse"
+TITLE="Concaténation nuages de points">
+<p>3</p>
+</section>
+
+<section id="contraintes-4" class="level2">
+<h3>Nuages d'acquisitions multiples</h3>
+<IMG SRC="image/applications.svg"
+ALT="Détection, archéo, biomasse"
+TITLE="Concaténation nuages de points">
+<p>4</p>
+</section>
+</section>
+
+<section id="methodo" class="level1">
+<h1>Choix techniques</h1>
+<section id="methodo-1" class="level2">
+<h3>Plug-in CloudCompare</h3>
+<IMG SRC="image/cc_cpp.svg"
+ALT="CloudCompare + C++ + .ply"
+TITLE="CloudCompare + C++ + .ply">
+<p>4</p>
+</section>
+
+<section id="methodo-2" class="level2">
+<h3>Diagramme fonctionnel</h3>
+<IMG SRC="image/tr_data.svg"
+ALT="Diagramme fonctionnel"
+TITLE="Diagramme fonctionnel">
+<p>5</p>
+</section>
+
+<section id="methodo-3" class="level2">
+<h3>Diagramme fonctionnel</h3>
+<IMG SRC="image/saisie_vt.svg"
+ALT="Diagramme fonctionnel"
+TITLE="Diagramme fonctionnel">
+<p>6</p>
+</section>
+
+<section id="methodo-4" class="level2">
+<h3>Diagramme fonctionnel</h3>
+<IMG SRC="image/classif.svg"
+ALT="Diagramme fonctionnel"
+TITLE="Diagramme fonctionnel">
+<p>7</p>
+</section>
+</section>
+
+<section id="interface" class="level1">
+<h1>Gestion de projet</h1>
+
+<section id="interface-0" class="level2">
+<h3>Qt</h3>
+<IMG SRC="image/kanban.svg"
+ALT="visu informations"
+TITLE="visu informations">
+<p>8</p>
+</section>
+
+<section id="interface-1" class="level2">
+<h3>Interface</h3>
+<IMG SRC="image/ui_interpolation.png"
+ALT="GANTT"
+TITLE="GANTT">
+<p>9</p>
+</section>
+
+<section id="interface-2" class="level2">
+<h3>Interface (2)</h3>
+<IMG SRC="image/ui_classification.png"
+ALT="GANTT"
+TITLE="GANTT">
+<p>9</p>
+</section>
+
+<section id="interface-3" class="level2">
+<h3>Interface (3)</h3>
+<IMG SRC="image/ui_vt.png"
+ALT="GANTT"
+TITLE="GANTT">
+<p>9</p>
+</section>
+</section>
+
+<section id="module" class="level1">
+<h1>Module</h1>
+
+<section id="module-0" class="level2">
+<h3>Qt</h3>
+<IMG SRC="image/ui_interpolation.png">
+<p>8</p>
+</section>
+
+<section id="module-1" class="level2">
+<h3>Interface</h3>
+<IMG SRC="image/ui_classification.png">
+<p>9</p>
+</section>
+
+<section id="module-2" class="level2">
+<h3>Interface (2)</h3>
+<IMG SRC="image/ui_vt.png">
+<p>9</p>
+</section>
+
+<section id="module-3" class="level2">
+<h3>Interface (3)</h3>
+<IMG SRC="image/gantt.svg"
+ALT="GANTT"
+TITLE="GANTT">
+<p>9</p>
+</section>
+</section>
+
+<section id="resultats" class="level1">
+<h1>Gestion de projet</h1>
+
+<section id="resultats-0" class="level2">
+<h3>Organisation</h3>
+<IMG SRC="image/kanban.svg"
+ALT="visu informations"
+TITLE="visu informations">
+<p>8</p>
+</section>
+
+<section id="resultats-1" class="level2">
+<h3>Diagramme de Gantt</h3>
+<IMG SRC="image/gantt.svg"
+ALT="GANTT"
+TITLE="GANTT">
+<p>9</p>
+</section>
+</section>
+
+<section id="Remerciements" class="level1">
+<section id="merci_merci" class="level2">
+<h2>Nos sincères remerciements <br> vont dès à présent à : </h2>
+<p><b>Marc POUPÉE, <br>Bruno VALLET, <br>Daniel GIRARDEAU-MONTAUT <br>et Iris DE GÉLIS</b> </p>
+<h2>pour leurs judicieux conseils et bienveillant accompagnement. </h2>
+
+</section>
+</section>
+
+			</div>
+
+
+
+
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
