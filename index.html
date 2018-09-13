@@ -313,6 +313,28 @@ code > span.er { color: #ff0000; font-weight: bold; }
             });
 
         </script>
+
+
+      <!-- 2. Create hidden header/footer <div> -->
+      <div id="hidden" style="display:none;">
+          <div id="header">
+              <div id="footer-left"> Emmanuel Bourassin - 14 septembre 2018</div>
+          </div>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript">
+          // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+          var header = $('#header').html();
+          if ( window.location.search.match( /print-pdf/gi ) ) {
+              Reveal.addEventListener( 'ready', function( event ) {
+                  $('.slide-background').append(header);
+              });
+          }
+          else {
+              $('div.reveal').append(header);
+         }
+      </script>
         <!-- -A/- -include-after-body -->
         <!-- comme le footer contient des variables, on le met dans le gabarit car
              les variables ne sont pas interprétées via -A de pandoc -->
